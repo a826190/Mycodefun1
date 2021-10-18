@@ -15,7 +15,7 @@ Place your credentials in a separate file that you don't check into the repo.
 
 '''
 
-with open('credentials_as_dev.json', encoding='utf-8') as F:
+with open('../credentials_as.json', encoding='utf-8') as F:
     credentials = json.loads(F.read())
 db_schema = None
 db = Database(credentials=credentials)
@@ -36,13 +36,13 @@ This file will be written to the working directory.
 
 '''
 
-from custom.functions import HelloWorld
+from custom.functions import HelloWorld_aguptav1
 
-fn = HelloWorld(name='AS_Tester', greeting_col='greeting')
+fn = HelloWorld_aguptav1(name='AS_Tester', greeting_col='greeting')
 fn.execute_local_test(db=db, db_schema=db_schema)
 
 '''
 Register function so that you can see it in the UI
 '''
 
-db.register_functions([HelloWorld])
+db.register_functions([HelloWorld_aguptav1])
