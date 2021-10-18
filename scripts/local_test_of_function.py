@@ -46,3 +46,6 @@ Register function so that you can see it in the UI
 '''
 
 db.register_functions([HelloWorld_aguptav1])
+
+
+#db.unregister_functions(['HelloWorld_aguptav1'])
