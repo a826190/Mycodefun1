@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 # Specify the URL to your package here.
 # This URL must be accessible via pip install
 
-PACKAGE_URL = '-b Starter_package git+https://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@github.com/a826190/Mycodefun1.git'
+PACKAGE_URL = '-b Starter_package https://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@github.com/a826190/Mycodefun1.git'
 
 
 class HelloWorld_aguptav1(BaseTransformer):
